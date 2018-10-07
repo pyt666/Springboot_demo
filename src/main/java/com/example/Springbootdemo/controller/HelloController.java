@@ -1,4 +1,4 @@
-package com.example.controller;
+package com.example.Springbootdemo.controller;
 
 import com.example.Springbootdemo.SpringbootDemoApplication;
 import org.springframework.boot.SpringApplication;
@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
     @RequestMapping("/hello")
     public String hello(){
-
         return "hello,Spring Boot!";
     }
 
