@@ -3,8 +3,10 @@ package com.example.Springbootdemo.dao;
 import com.example.Springbootdemo.pojo.Datastream;
 import com.example.Springbootdemo.pojo.DatastreamExample;
 import java.util.List;
-import org.apache.ibatis.annotations.Param;
 
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+@Mapper
 public interface DatastreamMapper {
     long countByExample(DatastreamExample example);
 

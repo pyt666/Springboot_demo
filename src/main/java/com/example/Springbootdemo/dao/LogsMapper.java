@@ -3,8 +3,10 @@ package com.example.Springbootdemo.dao;
 import com.example.Springbootdemo.pojo.Logs;
 import com.example.Springbootdemo.pojo.LogsExample;
 import java.util.List;
-import org.apache.ibatis.annotations.Param;
 
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+@Mapper
 public interface LogsMapper {
     long countByExample(LogsExample example);
 

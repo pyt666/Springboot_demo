@@ -3,8 +3,10 @@ package com.example.Springbootdemo.dao;
 import com.example.Springbootdemo.pojo.Trigger;
 import com.example.Springbootdemo.pojo.TriggerExample;
 import java.util.List;
-import org.apache.ibatis.annotations.Param;
 
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+@Mapper
 public interface TriggerMapper {
     long countByExample(TriggerExample example);
 

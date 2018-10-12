@@ -3,8 +3,10 @@ package com.example.Springbootdemo.dao;
 import com.example.Springbootdemo.pojo.DsTrigger;
 import com.example.Springbootdemo.pojo.DsTriggerExample;
 import java.util.List;
-import org.apache.ibatis.annotations.Param;
 
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+@Mapper
 public interface DsTriggerMapper {
     long countByExample(DsTriggerExample example);
 
