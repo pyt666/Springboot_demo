@@ -1,18 +1,13 @@
 package com.example.Springbootdemo.pojo;
 
 import java.io.Serializable;
-import java.util.Date;
 
 public class Datastream implements Serializable {
     private Integer id;
 
     private String name;
 
-    private Integer deviceid;
-
-    private Date createtime;
-
-    private Integer type;
+    private Integer deviceId;
 
     private static final long serialVersionUID = 1L;
 
@@ -32,28 +27,12 @@ public class Datastream implements Serializable {
         this.name = name == null ? null : name.trim();
     }
 
-    public Integer getDeviceid() {
-        return deviceid;
+    public Integer getDeviceId() {
+        return deviceId;
     }
 
-    public void setDeviceid(Integer deviceid) {
-        this.deviceid = deviceid;
-    }
-
-    public Date getCreatetime() {
-        return createtime;
-    }
-
-    public void setCreatetime(Date createtime) {
-        this.createtime = createtime;
-    }
-
-    public Integer getType() {
-        return type;
-    }
-
-    public void setType(Integer type) {
-        this.type = type;
+    public void setDeviceId(Integer deviceId) {
+        this.deviceId = deviceId;
     }
 
     @Override
@@ -64,9 +43,7 @@ public class Datastream implements Serializable {
         sb.append("Hash = ").append(hashCode());
         sb.append(", id=").append(id);
         sb.append(", name=").append(name);
-        sb.append(", deviceid=").append(deviceid);
-        sb.append(", createtime=").append(createtime);
-        sb.append(", type=").append(type);
+        sb.append(", deviceId=").append(deviceId);
         sb.append(", serialVersionUID=").append(serialVersionUID);
         sb.append("]");
         return sb.toString();

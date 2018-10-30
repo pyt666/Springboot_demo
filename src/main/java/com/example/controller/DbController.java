@@ -67,5 +67,9 @@ public class DbController {
             map = list.get(0);
         return map;
     }
+    @RequestMapping("/hello")
+    public String hello() {
+    	return "hello";
+    }
 
 }

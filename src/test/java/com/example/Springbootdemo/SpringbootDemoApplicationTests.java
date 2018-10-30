@@ -13,7 +13,6 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 import com.example.Springbootdemo.controller.HelloController;
-import com.example.Springbootdemo.pojo.Admin;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

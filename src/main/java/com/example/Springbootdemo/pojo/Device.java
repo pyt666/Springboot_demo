@@ -1,20 +1,13 @@
 package com.example.Springbootdemo.pojo;
 
 import java.io.Serializable;
-import java.util.Date;
 
 public class Device implements Serializable {
     private Integer id;
 
-    private String name;
+    private String deviceSn;
 
-    private Date createtime;
-
-    private Date modifytime;
-
-    private Integer useid;
-
-    private Integer type;
+    private Integer userid;
 
     private static final long serialVersionUID = 1L;
 
@@ -26,44 +19,20 @@ public class Device implements Serializable {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getDeviceSn() {
+        return deviceSn;
     }
 
-    public void setName(String name) {
-        this.name = name == null ? null : name.trim();
+    public void setDeviceSn(String deviceSn) {
+        this.deviceSn = deviceSn == null ? null : deviceSn.trim();
     }
 
-    public Date getCreatetime() {
-        return createtime;
+    public Integer getUserid() {
+        return userid;
     }
 
-    public void setCreatetime(Date createtime) {
-        this.createtime = createtime;
-    }
-
-    public Date getModifytime() {
-        return modifytime;
-    }
-
-    public void setModifytime(Date modifytime) {
-        this.modifytime = modifytime;
-    }
-
-    public Integer getUseid() {
-        return useid;
-    }
-
-    public void setUseid(Integer useid) {
-        this.useid = useid;
-    }
-
-    public Integer getType() {
-        return type;
-    }
-
-    public void setType(Integer type) {
-        this.type = type;
+    public void setUserid(Integer userid) {
+        this.userid = userid;
     }
 
     @Override
@@ -73,11 +42,8 @@ public class Device implements Serializable {
         sb.append(" [");
         sb.append("Hash = ").append(hashCode());
         sb.append(", id=").append(id);
-        sb.append(", name=").append(name);
-        sb.append(", createtime=").append(createtime);
-        sb.append(", modifytime=").append(modifytime);
-        sb.append(", useid=").append(useid);
-        sb.append(", type=").append(type);
+        sb.append(", deviceSn=").append(deviceSn);
+        sb.append(", userid=").append(userid);
         sb.append(", serialVersionUID=").append(serialVersionUID);
         sb.append("]");
         return sb.toString();
